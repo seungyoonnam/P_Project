@@ -1,0 +1,79 @@
+<section class="do_section layout_padding">
+<div class="container">
+    <div class="heading_container">
+    <h2>
+        What we do
+    </h2>
+    </div>
+    <div class="do_container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="img-box">
+                    <canvas id="myBarChart" width="100%" height="100%"></canvas>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2>"한국 뉴스 전반에 대한 신뢰는 28%, 아시아·태평양 46개국 중 최하위"</h2>
+                <div style="text-align: right;">
+                    <span style="color: gray;">- 영국 로이터저널리즘 연구소 [디지털 뉴스 리포트 2023] -</span>
+                </div>
+                <br><br>
+                <p>
+                  &nbsp;'가짜 뉴스' 문제는 우리 사회에 심각한 혼란을 야기하고 있습니다.
+                  제목과 실제 내용이 일치하지 않는 뉴스, 허위 정보가 담긴 뉴스 등으로 인해 언론의 권위가 흔들리고 있습니다.
+                  이로 인한 사회적 혼란은 우리 모두에게 영향을 미치며, 이에 대처하기 위한 노력이 필요합니다.<br><br>
+                  &nbsp;허위 정보를 바로잡는 시스템 구축이 필요하며, 이를 위해 모두가 동참해야 합니다.
+                  언론의 신뢰성은 사회의 안정성과 직결되어 있으므로 이 문제를 해결하는 것은 우리 모두의 책임입니다.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+
+<script>
+// Set new default font family and font color to mimic Bootstrap's default styling
+Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+Chart.defaults.global.defaultFontColor = '#2B4CDC';
+
+// Bar Chart Example
+var ctx = document.getElementById("myBarChart");
+var myLineChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["신뢰한다", "신뢰할 수 없다"],
+    datasets: [{
+      backgroundColor: '#2B4CDC',
+      borderColor: '#2B4CDC',
+      data: [28, 72],
+    }],
+  },
+  options: {
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          maxTicksLimit: 6
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 100,
+          maxTicksLimit: 5
+        },
+        gridLines: {
+          display: false
+        }
+      }],
+    },
+    legend: {
+      display: false
+    }
+  }
+});
+</script>

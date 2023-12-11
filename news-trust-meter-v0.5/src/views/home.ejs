@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title><%= title %></title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    
+    <!-- header section strats -->
+    <%- include(header) %>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class="slider_section position-relative">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <div class="detail-box">
+                    <div>
+                      <h2>
+                        welcome to
+                      </h2>
+                      <h1>
+                        <select id="platform-selector" onchange="changePlatform()"></select> 
+                        News Trust Meter
+                      </h1>
+                      <p>submit a NEWS URL for analysis</p>
+                      <form id="news-url-form" action="/report/naver" method="post">
+                        <input type="text" name="news_url" placeholder="www.news.com">
+                        <button id="submit_button" type="submit">입력</button>
+                        <button id="loading_button" type="button" disabled>
+                          <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                        </button>
+                      </form>
+                      <div class="">
+                        <a id="news-shortcut-link" href="https://news.naver.com/">Naver 뉴스 바로가기</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- do section -->
+  <%- include(wwdo) %>
+  <!-- end do section -->
+
+  <!-- who section -->
+  <%- include(who) %>
+  <!-- end who section -->
+
+
+  <!-- work section -->
+  <section class="work_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          AI Model
+        </h2>
+        <p>
+          모델에 대한 설명이 들어갈 위치입니다. 특성과 자연어처리, BERT model에 대해 간략한 설명과 이미지
+        </p>
+      </div>
+      <div class="work_container layout_padding2">
+        <div class="box b-1">
+          <img src="" alt="">
+        </div>
+        <div class="box b-2">
+          <img src="" alt="">
+
+        </div>
+        <div class="box b-3">
+          <img src="" alt="">
+
+        </div>
+        <div class="box b-4">
+          <img src="" alt="">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end work section -->
+
+  <!-- target section -->
+  <section class="target_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="detail-box">
+            <h2>
+              <%= resultNum %>건
+            </h2>
+            <h5>
+              판별해낸 기사
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="detail-box">
+            <h2>
+              "<%= mostCategory %>"
+            </h2>
+            <h5>
+              가장 많이 찾아본 카테고리
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="detail-box">
+            <h2>
+              <%= avgSatisfaction %>%
+            </h2>
+            <h5>
+              평균 만족도
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end target section -->
+
+
+  <!-- contact section -->
+  <%- include(contact) %>
+  <!-- end contact section -->
+
+  <!-- footer section -->
+  <%- include(footer) %>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/lib/newsplatform.js"></script>
+  <script>
+    document.getElementById('news-url-form').addEventListener('submit', function() {
+        // '입력' 버튼을 숨깁니다.
+        document.getElementById('submit_button').style.display = 'none';
+        // 스피너 버튼을 보여줍니다.
+        document.getElementById('loading_button').style.display = 'inline-block';
+    });
+
+    // 페이지가 보여질 때마다 버튼의 상태를 초기화합니다.
+    window.onpageshow = function() {
+        document.getElementById('submit_button').style.display = 'inline-block';
+        document.getElementById('loading_button').style.display = 'none';
+    };
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!--userInput, paragraphs-->
+
+<section class="report_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="info_form">
+          <form action="/report/naver" method="post">
+            <input type="text" name="news_url" placeholder="다른 기사문도 검색해보세요">
+            <button type="submit">입력</button>
+          </form>
+        </div>
+        <div class="img-box">
+          <canvas id="myPieChart" width="100%" height="100%"></canvas>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>
+              Paragraphs
+            </h2>
+            <span style="color:#2B4CDC "><%= newsCategory %></span>
+            <h5><%= newsTitle %></h5>
+          </div>
+          <div class="paragraph_box">
+            <p><%= paragraphs %></p>
+          </div>
+          <div>
+            <hr>
+            <p>예측 결과: <%= re %></p>
+          </div>
+          <div>
+            <form id="feedback_form" method="post">
+              <input type="hidden" name="category" value="<%= newsCategory %>">
+              <input type="hidden" name="title" value="<%= newsTitle %>">
+              <input type="hidden" name="content" value="<%= paragraphs %>">
+              <button type="button" onclick="submitForm('/report/feedback/Y')">맞아요</button>&nbsp;&nbsp;&nbsp;
+              <button type="button" onclick="submitForm('/report/feedback/N')">틀렸어요</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+
+<script>
+  // Set new default font family and font color to mimic Bootstrap's default styling
+  Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+  Chart.defaults.global.defaultFontColor = '#2B4CDC';
+
+  // Pie Chart
+  var ctx = document.getElementById("myPieChart");
+  var myPieChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ["TrustWorthy", "SUS"],
+      datasets: [{
+        data: [63, 100-63], //[re, 100-re]로 수정해야합니다.
+        backgroundColor: ['#2B4CDC', '#000000'],
+      }],
+    },
+  });
+</script>
+
+<script>
+  function submitForm(action) {
+      var form = document.getElementById('feedback_form');
+      form.action = action;
+      form.submit();
+  }
+</script>
