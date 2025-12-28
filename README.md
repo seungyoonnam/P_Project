@@ -4,7 +4,7 @@ project date : 2023.08 ~ 2023.12
 자극적인 제목으로 클릭을 유도하는 질 좋지 않은 인터넷 기사를 선별해내기 위한 뉴스 신뢰도 분석 서비스 개발.
 
 
-## 폴더 소개
+## 📁 폴더 소개
 ### 📁DL_model_links
 학습된 딥러닝 모델을 다운로드 가능한 구글 드라이브 link.
 
@@ -14,7 +14,7 @@ project date : 2023.08 ~ 2023.12
 ### 📁news-trust-meter-v0.5/src
 React 기반 프론트엔드 source code.
 
-# Used Skills
+# 🚀 Used Skills
 **Language** : 
 <img src="https://img.shields.io/badge/Python-3776AB?logo=Python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Javascript-F7DF1E?logo=javascript&logoColor=white"/>
@@ -44,18 +44,3 @@ React 기반 프론트엔드 source code.
 
 **Others** : Web Crawling 
 <img src="https://img.shields.io/badge/WebCrawling(BeautifulSoup)-000000"/>
-
-
-
-
-
-
-
-
-
-### 🚀 Tech Stack
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
