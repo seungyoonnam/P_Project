@@ -27,7 +27,6 @@ React 기반 프론트엔드 source code.
 <img src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white"/>
 <img src="https://img.shields.io/badge/EJS-B4CA65?logo=ejs&logoColor=white"/>
 <img src="https://img.shields.io/badge/Bootstrap%205-7952B3?logo=bootstrap&logoColor=white"/>
-<img src="https://img.shields.io/badge/mysql-4479A1?logo=mysql&logoColor=white"/>
 
 
 
@@ -38,7 +37,7 @@ React 기반 프론트엔드 source code.
 **Data** :
 <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white"/>
 <img src="https://img.shields.io/badge/Numpy-013243?logo=numpy&logoColor=white"/>
-<img src="https://img.shields.io/badge/SQLite-003B57?logo=SQLite&logoColor=white"/>
+<img src="https://img.shields.io/badge/mysql-4479A1?logo=mysql&logoColor=white"/>
 
 **NLP** : 
 <img src="https://img.shields.io/badge/KoNLPy-013243"/>
