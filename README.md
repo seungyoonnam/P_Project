@@ -14,6 +14,7 @@ project date : 2023.08 ~ 2023.12
 ### 📁news-trust-meter-v0.5/src
 React 기반 프론트엔드 source code.
 
+
 ## 🚀 Used Skills
 **Language** : 
 <img src="https://img.shields.io/badge/Python-3776AB?logo=Python&logoColor=white"/>
@@ -47,5 +48,6 @@ React 기반 프론트엔드 source code.
 <img src="https://img.shields.io/badge/WebCrawling(BeautifulSoup)-000000"/>
 
 
+## 📷 Screenshot
 ![screenshot1](https://github.com/seungyoonnam/P_Project/blob/main/screenshot1.png)
 ![screenshot2](https://github.com/seungyoonnam/P_Project/blob/main/screenshot2.png)
