@@ -32,7 +32,7 @@ React 기반 프론트엔드 source code.
 
 **NLP** : 
 <img src="https://img.shields.io/badge/KoNLPy-013243"/>
-<img src="https://img.shields.io/badge/Transformer(SKT-BERT)-FFD21E?logo=huggingface&logoColor=white"/>
+<img src="https://img.shields.io/badge/Transformer(SKT__BERT)-FFD21E?logo=huggingface&logoColor=white"/>
 
 **Others** : Web Crawling 
 <img src="https://img.shields.io/badge/WebCrawling(BeautifulSoup)-000000"/>
