@@ -18,6 +18,7 @@ React 기반 프론트엔드 source code.
 **Language** : 
 <img src="https://img.shields.io/badge/Python-3776AB?logo=Python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Javascript-F7DF1E?logo=javascript&logoColor=white"/>
+<img src="https://img.shields.io/badge/css-663399?logo=css&logoColor=white"/>
 
 **Front-End** : 
 <img src="https://img.shields.io/badge/react-61DAFB?logo=react&logoColor=white"/>
