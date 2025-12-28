@@ -21,14 +21,13 @@ React 기반 프론트엔드 source code.
 
 **Front-End** : 
 <img src="https://img.shields.io/badge/react-61DAFB?logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bootstrap%205-7952B3?logo=bootstrap&logoColor=white"/>
+<img src="https://img.shields.io/badge/axios-5A29E4?logo=axios&logoColor=white"/>
 
 **Back-End** : 
 <img src="https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white"/>
 <img src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white"/>
 <img src="https://img.shields.io/badge/EJS-B4CA65?logo=ejs&logoColor=white"/>
-<img src="https://img.shields.io/badge/Bootstrap%205-7952B3?logo=bootstrap&logoColor=white"/>
-
-
 
 **AI** : 
 <img src="https://img.shields.io/badge/Tensorflow-FF6F00?logo=tensorflow&logoColor=white"/>
