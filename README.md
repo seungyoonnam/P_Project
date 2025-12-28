@@ -3,6 +3,10 @@ project date : 2023.08 ~ 2023.12
 
 자극적인 제목으로 클릭을 유도하는 질 좋지 않은 인터넷 기사를 선별해내기 위한 뉴스 신뢰도 분석 서비스 개발.
 
+![screenshot1](https://github.com/seungyoonnam/P_Project/blob/main/screenshot1.png)
+![screenshot2](https://github.com/seungyoonnam/P_Project/blob/main/screenshot2.png)
+
+
 
 ## 📁 폴더 소개
 ### 📁DL_model_links
