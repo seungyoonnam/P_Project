@@ -3,7 +3,7 @@ project date : 2023.08 ~ 2023.12
 
 자극적인 제목으로 클릭을 유도하는 질 좋지 않은 인터넷 기사를 선별해내기 위한 뉴스 신뢰도 분석 서비스 개발.
 
-#폴더 소개
+# 폴더 소개
 ### DL_model_links
 학습된 딥러닝 모델을 다운로드 가능한 구글 드라이브 link.
 
@@ -13,9 +13,26 @@ project date : 2023.08 ~ 2023.12
 ### news-trust-meter-v0.5/src
 React 기반 프론트엔드 source code.
 
-#Used Skills
-**Language** : Python, JavaScript
-**Front-End** : React
-**AI** : Tensorflow, Pandas, Numpy
-**NLP** : KoNLPy, Transformer (SKT-BERT)
-**Others** : Web Crawling (BeautifulSoup)
+# Used Skills
+**Language** : 
+<img src="https://img.shields.io/badge/Python-3776AB?logo=Python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Javascript-F7DF1E?logo=javascript&logoColor=white"/>
+
+**Front-End** : 
+<img src="https://img.shields.io/badge/react-61DAFB?logo=react&logoColor=white"/>
+
+**AI** : 
+<img src="https://img.shields.io/badge/Tensorflow-FF6F00?logo=tensorflow&logoColor=white"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=PyTorch&logoColor=white"/>
+
+**Data** :
+<img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/Numpy-013243?logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQLite-003B57?logo=SQLite&logoColor=white"/>
+
+**NLP** : 
+<img src="https://img.shields.io/badge/KoNLPy-013243"/>
+<img src="https://img.shields.io/badge/Transformer(SKT-BERT)-FFD21E?logo=huggingface&logoColor=white"/>
+
+**Others** : Web Crawling 
+<img src="https://img.shields.io/badge/WebCrawling(BeautifulSoup)-000000"/>
