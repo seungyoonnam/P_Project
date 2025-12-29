@@ -5,13 +5,13 @@ project date : 2023.08 ~ 2023.12
 
 
 ## 📁 폴더 소개
-### 📁DL_model_links
+#### ↳ 📁DL_model_links
 학습된 딥러닝 모델을 다운로드 가능한 구글 드라이브 link.
 
-### 📁DL_model_training_codes
+#### ↳ 📁DL_model_training_codes
 일자별 딥러닝 모델 학습 코드.
 
-### 📁news-trust-meter-v0.5/src
+#### ↳ 📁news-trust-meter-v0.5/src
 React 기반 프론트엔드 source code.
 
 
